@@ -60,7 +60,7 @@ const result3 = persons.filter(onePersons => onePersons.age > 18 && onePersons.g
 console.log(result3);
 
 // Pomocí metody `every` zjistěte, jestli v poli `persons` platí, že každá zletilá osoba je vždy buď muž nebo žena (tedy že vlastnost `gender` má hodnotu `male` nebo hodnotu `female`).
-const result4 = persons.every(onePersons => onePersons.age > 18 && (onePersons.gender === 'male' || onePersons === 'female'));
+const result4 = persons.every(onePersons => onePersons.gender === 'male' || onePersons.gender === 'female' || onePersons.age < 18);
 console.log(result4);
 
 // Pomocí metody `forEach` napište cyklus, který spočítá průměr čísel v poli `numbers`.
